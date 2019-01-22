@@ -6,6 +6,7 @@ exec_once:
      wget -qcO- https://github.com/oroinc/crm-application/archive/2.6.1.tar.gz  | tar xvz  -C . --strip 1
   Run composer install:
    name: Run composer install
+   timeout: 1000
    command: |
      #!/usr/bin/env bash
      export COMPOSER_HOME=/usr/local/bin/.composer 
